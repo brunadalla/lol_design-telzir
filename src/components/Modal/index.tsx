@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { AiOutlineClose } from "react-icons/ai"
 import { Context } from "../../contexts"
 import { ModalContainer } from "./styles"
+import "animate.css"
 
 const Modal = () => {
   const { isModalVisible, setIsModalVisible, callInfo } = useContext(Context)
@@ -13,8 +14,7 @@ const Modal = () => {
 
   return (
     <ModalContainer isModalVisible={isModalVisible}>
-      <div className="modal">
-
+      <div className='modal animate__animated animate__fadeInDown'>
         <header>
           <h1>PRICES</h1>
           <button onClick={() => closeModal()}>
@@ -23,22 +23,27 @@ const Modal = () => {
         </header>
 
         <ul>
-          <li>Origin: {fromWhere}</li>
-          <li>Destination: {toWhere}</li>
-          <li>Time: {forHowLong} minutes</li>
+          <li>
+            <span>Origin:</span> {fromWhere}
+          </li>
+          <li>
+            <span>Destination:</span> {toWhere}
+          </li>
+          <li>
+            <span>Time:</span> {forHowLong} minutes
+          </li>
         </ul>
 
         <section>
-          <div className="div-withPlan">
+          <div className='div-withPlan'>
             <span>$ {withPlan}</span>
             <span>with FaleMais</span>
           </div>
-          <div className="div-withoutPlan">
+          <div className='div-withoutPlan'>
             <span>$ {withoutPlan}</span>
             <span>without FaleMais</span>
           </div>
         </section>
-
       </div>
     </ModalContainer>
   )

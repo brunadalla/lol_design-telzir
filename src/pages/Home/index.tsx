@@ -1,20 +1,17 @@
 import { HomeContainer } from "./styles"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import Form from "../../components/Form"
-import { useContext } from "react"
-import { Context } from "../../contexts"
 import Modal from "../../components/Modal"
+import "animate.css"
 
 const Home = () => {
-  const { isModalVisible } = useContext(Context)
-
   return (
     <HomeContainer>
       <Modal />
-      <main>
-        <section>
+      <main className='animate__animated animate__fadeIn'>
+        <section className='section-info'>
           <div>
-            <BsFillTelephoneFill />
+            <BsFillTelephoneFill color='white' size={"1.7rem"} />
             <h1>TELZIR</h1>
           </div>
           <h3>
@@ -22,11 +19,12 @@ const Home = () => {
             rates!
           </h3>
           <p>
-            Calculate now the value of your phone call with the FaleMais plans!
+            Calculate now the value of your phone call with the{" "}
+            <span>FaleMais</span> plans!
           </p>
         </section>
 
-        <section>
+        <section className='section-form'>
           <Form />
         </section>
       </main>
