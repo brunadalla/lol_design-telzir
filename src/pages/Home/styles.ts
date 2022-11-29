@@ -15,6 +15,7 @@ export const HomeContainer = styled.div`
   main {
     width: 100%;
     height: 100%;
+
     display: flex;
     flex-direction: column;
 
@@ -30,8 +31,9 @@ export const HomeContainer = styled.div`
 
       display: flex;
       align-items: flex-start;
-      justify-content: space-between;
       flex-direction: column;
+      justify-content: space-between;
+
       background-color: var(--green-blue);
 
       div {
@@ -43,6 +45,7 @@ export const HomeContainer = styled.div`
 
         h1 {
           color: var(--white);
+
           font-size: 2rem;
           font-style: italic;
           font-weight: 800;
@@ -51,6 +54,7 @@ export const HomeContainer = styled.div`
 
       h3 {
         color: var(--white);
+
         font-size: 1.1rem;
         font-weight: 600;
         text-align: left;
@@ -98,6 +102,7 @@ export const HomeContainer = styled.div`
 
         gap: 30px;
         justify-content: flex-start;
+        
         border-radius: 8px 0 0 8px;
       }
 

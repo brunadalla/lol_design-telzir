@@ -17,16 +17,12 @@ export const cities: Array<ICity> = [
 ]
 
 export const taxes: Array<ITax> = [
-  { codeOrigin: 11, codeDestination: 16, tax: 1.90 },
-  { codeOrigin: 16, codeDestination: 11, tax: 2.90 },
-  { codeOrigin: 11, codeDestination: 17, tax: 1.70 },
-  { codeOrigin: 17, codeDestination: 11, tax: 2.70 },
-  { codeOrigin: 11, codeDestination: 18, tax: 0.90 },
-  { codeOrigin: 18, codeDestination: 11, tax: 1.90 },
+  { codeOrigin: 11, codeDestination: 16, tax: 1.9 },
+  { codeOrigin: 16, codeDestination: 11, tax: 2.9 },
+  { codeOrigin: 11, codeDestination: 17, tax: 1.7 },
+  { codeOrigin: 17, codeDestination: 11, tax: 2.7 },
+  { codeOrigin: 11, codeDestination: 18, tax: 0.9 },
+  { codeOrigin: 18, codeDestination: 11, tax: 1.9 },
 ]
 
-export const faleMaisPlans: Array<string> = [
-  "30",
-  "60",
-  "120",
-]
+export const faleMaisPlans: Array<string> = ["30", "60", "120"]

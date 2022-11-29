@@ -1,8 +1,9 @@
 import { useContext } from "react"
 import { AiOutlineClose } from "react-icons/ai"
+import "animate.css"
+
 import { Context } from "../../contexts"
 import { ModalContainer } from "./styles"
-import "animate.css"
 
 const Modal = () => {
   const { isModalVisible, setIsModalVisible, callInfo } = useContext(Context)
@@ -36,11 +37,12 @@ const Modal = () => {
 
         <section>
           <div className='div-withPlan'>
-            <span>$ {withPlan}</span>
+            <span>{withPlan}</span>
             <span>with FaleMais</span>
           </div>
+
           <div className='div-withoutPlan'>
-            <span>$ {withoutPlan}</span>
+            <span>{withoutPlan}</span>
             <span>without FaleMais</span>
           </div>
         </section>

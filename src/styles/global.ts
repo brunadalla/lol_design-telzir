@@ -1,11 +1,12 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle, css } from "styled-components"
 
 const AnekDevanagari = css`
-  @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;500;600;700;800&display=swap');
-`;
+  @import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;500;600;700;800&display=swap");
+`
 
 const GlobalStyle = createGlobalStyle`
-    ${AnekDevanagari}
+  ${AnekDevanagari}
+
   :root {
     --dark-grey: #1E2327;
     --dark-blue: #022B3A;
@@ -16,20 +17,19 @@ const GlobalStyle = createGlobalStyle`
    
 };
 
-    * {
-        margin: 0;
-        border: 0;
-        padding: 0px;
-        outline: unset;
+  * {
+    margin: 0;
+    border: 0;
+    padding: 0px;
+    outline: unset;
 
-        font-family: 'Anek Devanagari', sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
 
-        list-style: none;
+    list-style: none;
 
-        box-sizing: border-box;
-    };
-
+    box-sizing: border-box;
+  };
 `
 export default GlobalStyle

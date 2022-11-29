@@ -9,19 +9,19 @@ export const ModalContainer = styled.div<IModalProps>`
   height: 100%;
   min-width: 320px;
 
-  align-items: center;
   display: ${({ isModalVisible }) =>
     isModalVisible === true ? "flex" : "none"};
+  align-items: center;
   justify-content: center;
 
-  position: absolute;
   z-index: 9999;
+  position: absolute;
 
   background-color: rgba(0, 0, 0, 0.8);
 
   .animate__animated.animate__fadeInDown {
-  --animate-duration: 0.6s;
-}
+    --animate-duration: 0.6s;
+  }
 
   .modal {
     width: 100%;
@@ -68,8 +68,8 @@ export const ModalContainer = styled.div<IModalProps>`
       }
 
       button:hover {
-        cursor: pointer;
         scale: 1.1;
+        cursor: pointer;
       }
     }
 
@@ -95,8 +95,8 @@ export const ModalContainer = styled.div<IModalProps>`
     section {
       width: 100%;
       height: 40%;
-
       min-height: 90px;
+
       display: flex;
       flex-direction: column;
       justify-content: space-between;

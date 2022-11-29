@@ -1,12 +1,12 @@
 import * as yup from "yup"
-import "animate.css"
 import { useContext } from "react"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
+import "animate.css"
 
-import { FormContainer } from "./styles"
-import { cities, faleMaisPlans } from "../../data"
 import { Context } from "../../contexts"
+import { cities, faleMaisPlans } from "../../data"
+import { FormContainer } from "./styles"
 
 interface IResponseData {
   fromWhere: number
@@ -40,11 +40,11 @@ const Form = () => {
         <select defaultValue={11} id='fromWhere' {...register("fromWhere")}>
           {cities.map((city, index) => (
             <option key={index} value={city.code}>
-              {" "}
-              {city.name}{" "}
+              {city.name}
             </option>
           ))}
         </select>
+
         <p></p>
       </div>
 
@@ -53,13 +53,15 @@ const Form = () => {
         <select defaultValue={16} id='toWhere' {...register("toWhere")}>
           {cities.map((city, index) => (
             <option key={index} value={city.code}>
-              {" "}
-              {city.name}{" "}
+              {city.name}
             </option>
           ))}
         </select>
+
         {isEqual ? (
-          <p className="animate__animated animate__shakeX">Origin and Destination can not be the same city!</p>
+          <p className='animate__animated animate__shakeX'>
+            Origin and Destination can not be the same city!
+          </p>
         ) : (
           <p></p>
         )}
@@ -73,7 +75,14 @@ const Form = () => {
           placeholder='Ex: 120'
           {...register("forHowLong")}
         />
-        {errors.forHowLong ? <p className="animate__animated animate__shakeX">{errors.forHowLong.message}</p> : <p></p>}
+
+        {errors.forHowLong ? (
+          <p className='animate__animated animate__shakeX'>
+            {errors.forHowLong.message}
+          </p>
+        ) : (
+          <p></p>
+        )}
       </div>
 
       <div>
@@ -85,6 +94,7 @@ const Form = () => {
             </option>
           ))}
         </select>
+
         <p></p>
       </div>
 

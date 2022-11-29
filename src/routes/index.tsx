@@ -4,7 +4,7 @@ import Home from "../pages/Home"
 const RoutesMain = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home/>} />
+      <Route path='/' element={<Home />} />
       <Route path='*' element={<Navigate replace to='/' />} />
     </Routes>
   )

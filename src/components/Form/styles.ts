@@ -31,11 +31,11 @@ export const FormContainer = styled.form`
       height: 30%;
       min-height: 26px;
 
-      border: unset;
-      border-radius: 8px;
-      outline: unset;
-
       padding: 0 5px;
+
+      border: unset;
+      outline: unset;
+      border-radius: 8px;
 
       color: var(--dark-blue);
       background-color: var(--white);
@@ -50,10 +50,11 @@ export const FormContainer = styled.form`
     }
 
     p {
+      min-height: 14.5px;
+      
       color: var(--green-blue);
       font-size: 0.8rem;
       font-weight: 600;
-      min-height: 14.5px;
     }
   }
 
