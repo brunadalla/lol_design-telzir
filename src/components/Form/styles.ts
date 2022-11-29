@@ -4,6 +4,7 @@ export const FormContainer = styled.form`
   width: 100%;
   height: 100%;
   max-width: 570px;
+  max-height: 400px;
 
   gap: 5px;
   display: flex;
