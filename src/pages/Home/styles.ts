@@ -28,6 +28,7 @@ export const HomeContainer = styled.div`
 
     .section-info {
       height: 40%;
+     
 
       display: flex;
       align-items: flex-start;
@@ -73,6 +74,7 @@ export const HomeContainer = styled.div`
 
     .section-form {
       height: 60%;
+      max-height: 400px;
 
       display: flex;
       align-items: center;
@@ -99,6 +101,7 @@ export const HomeContainer = styled.div`
       .section-info {
         width: 45%;
         height: 100%;
+        max-height: none;
 
         gap: 30px;
         justify-content: flex-start;
@@ -109,6 +112,7 @@ export const HomeContainer = styled.div`
       .section-form {
         width: 55%;
         height: 100%;
+        max-height: none;
 
         border-radius: 0 8px 8px 0;
       }

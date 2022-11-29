@@ -9,16 +9,22 @@ const Modal = () => {
   const { isModalVisible, setIsModalVisible, callInfo } = useContext(Context)
   const { forHowLong, fromWhere, toWhere, withPlan, withoutPlan } = callInfo
 
-  function closeModal() {
-    setIsModalVisible(false)
+  function closeModal(currentTarget: any, target: any) {
+    if (currentTarget === target) {
+      setIsModalVisible(false)
+    }
   }
 
   return (
-    <ModalContainer isModalVisible={isModalVisible}>
+    <ModalContainer
+      isModalVisible={isModalVisible}
+      className='background'
+      onClick={(e) => closeModal(e.currentTarget, e.target)}
+    >
       <div className='modal animate__animated animate__fadeInDown'>
         <header>
           <h1>PRICES</h1>
-          <button onClick={() => closeModal()}>
+          <button onClick={() => setIsModalVisible(false)}>
             <AiOutlineClose />
           </button>
         </header>
