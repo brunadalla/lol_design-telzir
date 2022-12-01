@@ -71,7 +71,7 @@ const Form = () => {
         <label htmlFor='forHowLong'> Duration Time (minutes) </label>
         <input
           id='forHowLong'
-          type='text'
+          type='number'
           placeholder='Ex: 120'
           {...register("forHowLong")}
         />
