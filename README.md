@@ -1,5 +1,5 @@
 ## Aplicação Telzir
-link vercel: 
+link vercel: https://telzir-lol-design-brunadalla.vercel.app/
 
 ### Linguagens, bibliotecas e frameworks utilizados:
 - JavaScript;
